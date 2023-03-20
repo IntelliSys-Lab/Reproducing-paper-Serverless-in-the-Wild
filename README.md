@@ -6,7 +6,7 @@ This project builds the Histogram Policy in [Serverless in the Wild: Characteriz
 
 As shown below, there are three steps to reproduce the paper. First, implement the hybrid policy in Load Balancer, where all invocations pass through. Second, as the Load Balancer sends all invocation requests called Activation Messages to Invokers, we should add the keep-alive and pre-warm parameters in the Activation Message API. Finally, modify the keep-alive value of the corresponding container.
 
-<img src="/Users/suiyifan/Library/Application Support/typora-user-images/image-20230318172857027.png" alt="image-20230318172857027" style="zoom:50%;" />
+<img width="553" alt="截屏2023-03-20 上午11 36 46" src="https://user-images.githubusercontent.com/116547167/226240846-140ff50b-c365-4ad9-af72-d2431336c356.png" style="zoom:50%;" />
 
 
 
@@ -39,7 +39,7 @@ To improve resource utilization, I make an extra modification. The case object *
 
 As shown below, if an unpredicted invocation arrives while ContainerA has not been pre-warmed, the Histogram Policy will treat it as a cold start, executing it immediately and pre-warm ContainerB after a few minutes. Eventually, there are two idle containers in the pool while only at most one of them will be used, causing huge resource wastage (a whole keep-alive period). So I add an extra mechanism of pre-warming. Once a container is about to be pre-warmed, the scheduler will check whether there has been an idle container in the pool. If an idle container exists, the new container will not be pre-warmed.
 
-<img src="/Users/suiyifan/Desktop/openwhisk-master-copy1226的副本/problem.png" alt="problem" style="zoom:30%;" />
+<img width="786" alt="problem" src="https://user-images.githubusercontent.com/116547167/226240949-2a5c576c-abf4-4cdc-86f4-46c348ddf4ad.png" style="zoom:30%;" />
 
 You can just delete this object. It won't affect the actual running of OpenWhisk.
 
