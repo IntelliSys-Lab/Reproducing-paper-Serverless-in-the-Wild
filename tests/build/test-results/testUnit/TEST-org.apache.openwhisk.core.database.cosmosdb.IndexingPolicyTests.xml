@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.apache.openwhisk.core.database.cosmosdb.IndexingPolicyTests" tests="3" skipped="0" failures="0" errors="0" timestamp="2022-12-06T13:11:48" hostname="MacBook-Pro.local" time="0.023">
+  <properties/>
+  <testcase name="IndexingPolicy should match same instance" classname="org.apache.openwhisk.core.database.cosmosdb.IndexingPolicyTests" time="0.006"/>
+  <testcase name="IndexingPolicy should not match when same path are different" classname="org.apache.openwhisk.core.database.cosmosdb.IndexingPolicyTests" time="0.001"/>
+  <testcase name="IndexingPolicy should convert and match java IndexingPolicy" classname="org.apache.openwhisk.core.database.cosmosdb.IndexingPolicyTests" time="0.016"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

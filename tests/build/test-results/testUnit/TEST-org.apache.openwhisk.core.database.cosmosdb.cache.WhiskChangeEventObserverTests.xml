@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.apache.openwhisk.core.database.cosmosdb.cache.WhiskChangeEventObserverTests" tests="5" skipped="0" failures="0" errors="0" timestamp="2022-12-06T13:11:48" hostname="MacBook-Pro.local" time="0.132">
+  <properties/>
+  <testcase name="CosmosDB extract LSN from Session token should parse old session token" classname="org.apache.openwhisk.core.database.cosmosdb.cache.WhiskChangeEventObserverTests" time="0.002"/>
+  <testcase name="CosmosDB extract LSN from Session token should parse new session token" classname="org.apache.openwhisk.core.database.cosmosdb.cache.WhiskChangeEventObserverTests" time="0.0"/>
+  <testcase name="CosmosDB extract LSN from Session token should parse new session token with multiple regional lsn" classname="org.apache.openwhisk.core.database.cosmosdb.cache.WhiskChangeEventObserverTests" time="0.0"/>
+  <testcase name="CosmosDB feed events should generate cache events" classname="org.apache.openwhisk.core.database.cosmosdb.cache.WhiskChangeEventObserverTests" time="0.128"/>
+  <testcase name="CosmosDB feed events should filter clusterId" classname="org.apache.openwhisk.core.database.cosmosdb.cache.WhiskChangeEventObserverTests" time="0.001"/>
+  <system-out><![CDATA[[2022-12-06T21:11:48.401Z] [INFO] Shutting down remote daemon.
+[2022-12-06T21:11:48.401Z] [INFO] Remote daemon shut down; proceeding with flushing remote transports.
+[2022-12-06T21:11:48.402Z] [INFO] Remoting shut down.
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

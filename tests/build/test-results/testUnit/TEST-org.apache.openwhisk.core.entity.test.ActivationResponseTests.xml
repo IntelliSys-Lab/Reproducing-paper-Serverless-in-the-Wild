@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.apache.openwhisk.core.entity.test.ActivationResponseTests" tests="18" skipped="0" failures="0" errors="0" timestamp="2022-12-06T13:11:48" hostname="MacBook-Pro.local" time="0.021">
+  <properties/>
+  <testcase name="ActivationResponse should interpret truncated response" classname="org.apache.openwhisk.core.entity.test.ActivationResponseTests" time="0.008"/>
+  <testcase name="ActivationResponse should interpret failed init that does not response" classname="org.apache.openwhisk.core.entity.test.ActivationResponseTests" time="0.001"/>
+  <testcase name="ActivationResponse should interpret failed init that responds with null string" classname="org.apache.openwhisk.core.entity.test.ActivationResponseTests" time="0.003"/>
+  <testcase name="ActivationResponse should interpret failed init that responds with empty string" classname="org.apache.openwhisk.core.entity.test.ActivationResponseTests" time="0.001"/>
+  <testcase name="ActivationResponse should interpret failed init that responds with non-empty string" classname="org.apache.openwhisk.core.entity.test.ActivationResponseTests" time="0.001"/>
+  <testcase name="ActivationResponse should interpret failed init that responds with JSON string not object" classname="org.apache.openwhisk.core.entity.test.ActivationResponseTests" time="0.001"/>
+  <testcase name="ActivationResponse should interpret failed init that responds with JSON object containing error" classname="org.apache.openwhisk.core.entity.test.ActivationResponseTests" time="0.001"/>
+  <testcase name="ActivationResponse should interpret failed init that responds with JSON object" classname="org.apache.openwhisk.core.entity.test.ActivationResponseTests" time="0.0"/>
+  <testcase name="ActivationResponse should not interpret successful init" classname="org.apache.openwhisk.core.entity.test.ActivationResponseTests" time="0.0"/>
+  <testcase name="ActivationResponse should interpret failed run that does not response" classname="org.apache.openwhisk.core.entity.test.ActivationResponseTests" time="0.0"/>
+  <testcase name="ActivationResponse should interpret failed run that responds with null string" classname="org.apache.openwhisk.core.entity.test.ActivationResponseTests" time="0.001"/>
+  <testcase name="ActivationResponse should interpret failed run that responds with empty string" classname="org.apache.openwhisk.core.entity.test.ActivationResponseTests" time="0.0"/>
+  <testcase name="ActivationResponse should interpret failed run that responds with non-empty string" classname="org.apache.openwhisk.core.entity.test.ActivationResponseTests" time="0.0"/>
+  <testcase name="ActivationResponse should interpret failed run that responds with JSON string not object" classname="org.apache.openwhisk.core.entity.test.ActivationResponseTests" time="0.001"/>
+  <testcase name="ActivationResponse should interpret failed run that responds with JSON object containing error" classname="org.apache.openwhisk.core.entity.test.ActivationResponseTests" time="0.0"/>
+  <testcase name="ActivationResponse should interpret failed run that responds with JSON object" classname="org.apache.openwhisk.core.entity.test.ActivationResponseTests" time="0.0"/>
+  <testcase name="ActivationResponse should interpret successful run that responds with JSON object containing error" classname="org.apache.openwhisk.core.entity.test.ActivationResponseTests" time="0.001"/>
+  <testcase name="ActivationResponse should interpret successful run that responds with JSON object" classname="org.apache.openwhisk.core.entity.test.ActivationResponseTests" time="0.0"/>
+  <system-out><![CDATA[	at akka.actor.ActorCell.systemInvoke(ActorCell.scala:535)
+	at akka.dispatch.Mailbox.processAllSystemMessages(Mailbox.scala:295)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:230)
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:243)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1311)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1840)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1806)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:177)
+[2022-12-06T21:11:48.768Z] [INFO] Shutting down remote daemon.
+[2022-12-06T21:11:48.768Z] [INFO] Remote daemon shut down; proceeding with flushing remote transports.
+[2022-12-06T21:11:48.768Z] [INFO] Remoting shut down.
+[2022-12-06T13:11:48.793Z] [WARN] [#tid_sid_unknown] [] [ActivationResponse] response did not json parse: 'null' led to java.lang.NullPointerException: Cannot invoke "String.length()" because "this.string" is null
+[2022-12-06T13:11:48.794Z] [WARN] [#tid_sid_unknown] [] [ActivationResponse] response did not json parse: '' led to spray.json.JsonParser$ParsingException: Unexpected end-of-input at input index 0 (line 1, position 1), expected JSON Value:  ^
+[2022-12-06T13:11:48.794Z] [WARN] [#tid_sid_unknown] [] [ActivationResponse] response did not json parse: 'string' led to spray.json.JsonParser$ParsingException: Unexpected character 's' at input index 0 (line 1, position 1), expected JSON Value: string ^
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

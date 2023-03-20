@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.apache.openwhisk.core.invoker.test.InstanceIdAssignerTests" tests="5" skipped="0" failures="0" errors="0" timestamp="2022-12-06T13:11:49" hostname="MacBook-Pro.local" time="2.863">
+  <properties/>
+  <testcase name="Id Assignment should assign fresh id" classname="org.apache.openwhisk.core.invoker.test.InstanceIdAssignerTests" time="0.369"/>
+  <testcase name="Id Assignment should reuse id if exists" classname="org.apache.openwhisk.core.invoker.test.InstanceIdAssignerTests" time="0.686"/>
+  <testcase name="Id Assignment should attempt to overwrite id for unique name if overwrite set" classname="org.apache.openwhisk.core.invoker.test.InstanceIdAssignerTests" time="0.509"/>
+  <testcase name="Id Assignment should overwrite an id for unique name that already exists and reset overwritten id" classname="org.apache.openwhisk.core.invoker.test.InstanceIdAssignerTests" time="0.93"/>
+  <testcase name="Id Assignment should fail to overwrite an id too large for the invoker pool size" classname="org.apache.openwhisk.core.invoker.test.InstanceIdAssignerTests" time="0.336"/>
+  <system-out><![CDATA[[2022-12-06T21:11:49.195Z] [INFO] Shutting down remote daemon.
+[2022-12-06T21:11:49.195Z] [INFO] Remote daemon shut down; proceeding with flushing remote transports.
+[2022-12-06T21:11:49.196Z] [INFO] Remoting shut down.
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

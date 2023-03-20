@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.apache.openwhisk.common.ConfigTests" tests="6" skipped="0" failures="0" errors="0" timestamp="2022-12-06T13:12:53" hostname="MacBook-Pro.local" time="0.002">
+  <properties/>
+  <testcase name="Config should gets default value" classname="org.apache.openwhisk.common.ConfigTests" time="0.001"/>
+  <testcase name="Config should get value from environment" classname="org.apache.openwhisk.common.ConfigTests" time="0.0"/>
+  <testcase name="Config should not be valid when environment does not provide value" classname="org.apache.openwhisk.common.ConfigTests" time="0.0"/>
+  <testcase name="Config should be invalid if same property is required and optional and still not defined" classname="org.apache.openwhisk.common.ConfigTests" time="0.0"/>
+  <testcase name="Config should read optional value" classname="org.apache.openwhisk.common.ConfigTests" time="0.0"/>
+  <testcase name="Config should override a value with optional value" classname="org.apache.openwhisk.common.ConfigTests" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

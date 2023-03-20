@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class org.apache.openwhisk.core.containerpool.test.ContainerPoolObjectTests</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class org.apache.openwhisk.core.containerpool.test.ContainerPoolObjectTests</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/org.apache.openwhisk.core.containerpool.test.html">org.apache.openwhisk.core.containerpool.test</a> &gt; ContainerPoolObjectTests</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">10</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">2</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.018s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox failures" id="successRate">
+<div class="percent">80%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Failed tests</a>
+</li>
+<li>
+<a href="#tab1">Tests</a>
+</li>
+<li>
+<a href="#tab2">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Failed tests</h2>
+<div class="test">
+<a name="ContainerPool schedule() should not use a container when active activation count &gt;= maxconcurrent"></a>
+<h3 class="failures">ContainerPool schedule() should not use a container when active activation count &gt;= maxconcurrent</h3>
+<span class="code">
+<pre>java.lang.AssertionError: could not determine openwhisk home
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at common.WhiskProperties.&lt;clinit&gt;(WhiskProperties.java:98)
+	at org.apache.openwhisk.core.containerpool.test.ContainerPoolObjectTests.$anonfun$new$57(ContainerPoolTests.scala:1101)
+	at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
+	at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
+	at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+	at org.scalatest.Transformer.apply(Transformer.scala:22)
+	at org.scalatest.Transformer.apply(Transformer.scala:20)
+	at org.scalatest.FlatSpecLike$$anon$5.apply(FlatSpecLike.scala:1682)
+	at org.scalatest.TestSuite.withFixture(TestSuite.scala:196)
+	at org.scalatest.TestSuite.withFixture$(TestSuite.scala:195)
+	at org.apache.openwhisk.core.containerpool.test.ContainerPoolObjectTests.org$scalamock$scalatest$AbstractMockFactory$$super$withFixture(ContainerPoolTests.scala:996)
+	at org.scalamock.scalatest.AbstractMockFactory.$anonfun$withFixture$1(AbstractMockFactory.scala:35)
+	at org.scalamock.MockFactoryBase.withExpectations(MockFactoryBase.scala:41)
+	at org.scalamock.MockFactoryBase.withExpectations$(MockFactoryBase.scala:33)
+	at org.apache.openwhisk.core.containerpool.test.ContainerPoolObjectTests.withExpectations(ContainerPoolTests.scala:996)
+	at org.scalamock.scalatest.AbstractMockFactory.withFixture(AbstractMockFactory.scala:34)
+	at org.scalamock.scalatest.AbstractMockFactory.withFixture$(AbstractMockFactory.scala:31)
+	at org.apache.openwhisk.core.containerpool.test.ContainerPoolObjectTests.withFixture(ContainerPoolTests.scala:996)
+	at org.scalatest.FlatSpecLike.invokeWithFixture$1(FlatSpecLike.scala:1680)
+	at org.scalatest.FlatSpecLike.$anonfun$runTest$1(FlatSpecLike.scala:1692)
+	at org.scalatest.SuperEngine.runTestImpl(Engine.scala:286)
+	at org.scalatest.FlatSpecLike.runTest(FlatSpecLike.scala:1692)
+	at org.scalatest.FlatSpecLike.runTest$(FlatSpecLike.scala:1674)
+	at org.scalatest.FlatSpec.runTest(FlatSpec.scala:1685)
+	at org.scalatest.FlatSpecLike.$anonfun$runTests$1(FlatSpecLike.scala:1750)
+	at org.scalatest.SuperEngine.$anonfun$runTestsInBranch$1(Engine.scala:393)
+	at scala.collection.immutable.List.foreach(List.scala:431)
+	at org.scalatest.SuperEngine.traverseSubNodes$1(Engine.scala:381)
+	at org.scalatest.SuperEngine.runTestsInBranch(Engine.scala:370)
+	at org.scalatest.SuperEngine.$anonfun$runTestsInBranch$1(Engine.scala:407)
+	at scala.collection.immutable.List.foreach(List.scala:431)
+	at org.scalatest.SuperEngine.traverseSubNodes$1(Engine.scala:381)
+	at org.scalatest.SuperEngine.runTestsInBranch(Engine.scala:376)
+	at org.scalatest.SuperEngine.runTestsImpl(Engine.scala:458)
+	at org.scalatest.FlatSpecLike.runTests(FlatSpecLike.scala:1750)
+	at org.scalatest.FlatSpecLike.runTests$(FlatSpecLike.scala:1749)
+	at org.scalatest.FlatSpec.runTests(FlatSpec.scala:1685)
+	at org.scalatest.Suite.run(Suite.scala:1124)
+	at org.scalatest.Suite.run$(Suite.scala:1106)
+	at org.scalatest.FlatSpec.org$scalatest$FlatSpecLike$$super$run(FlatSpec.scala:1685)
+	at org.scalatest.FlatSpecLike.$anonfun$run$1(FlatSpecLike.scala:1795)
+	at org.scalatest.SuperEngine.runImpl(Engine.scala:518)
+	at org.scalatest.FlatSpecLike.run(FlatSpecLike.scala:1795)
+	at org.scalatest.FlatSpecLike.run$(FlatSpecLike.scala:1793)
+	at org.scalatest.FlatSpec.run(FlatSpec.scala:1685)
+	at org.scalatest.junit.JUnitRunner.run(JUnitRunner.scala:100)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at jdk.proxy1/jdk.proxy1.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:119)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:414)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="ContainerPool schedule() should use a warming when active activation count &lt; maxconcurrent"></a>
+<h3 class="failures">ContainerPool schedule() should use a warming when active activation count &lt; maxconcurrent</h3>
+<span class="code">
+<pre>java.lang.NoClassDefFoundError: Could not initialize class common.WhiskProperties
+	at org.apache.openwhisk.core.containerpool.test.ContainerPoolObjectTests.$anonfun$new$59(ContainerPoolTests.scala:1120)
+	at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
+	at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
+	at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+	at org.scalatest.Transformer.apply(Transformer.scala:22)
+	at org.scalatest.Transformer.apply(Transformer.scala:20)
+	at org.scalatest.FlatSpecLike$$anon$5.apply(FlatSpecLike.scala:1682)
+	at org.scalatest.TestSuite.withFixture(TestSuite.scala:196)
+	at org.scalatest.TestSuite.withFixture$(TestSuite.scala:195)
+	at org.apache.openwhisk.core.containerpool.test.ContainerPoolObjectTests.org$scalamock$scalatest$AbstractMockFactory$$super$withFixture(ContainerPoolTests.scala:996)
+	at org.scalamock.scalatest.AbstractMockFactory.$anonfun$withFixture$1(AbstractMockFactory.scala:35)
+	at org.scalamock.MockFactoryBase.withExpectations(MockFactoryBase.scala:41)
+	at org.scalamock.MockFactoryBase.withExpectations$(MockFactoryBase.scala:33)
+	at org.apache.openwhisk.core.containerpool.test.ContainerPoolObjectTests.withExpectations(ContainerPoolTests.scala:996)
+	at org.scalamock.scalatest.AbstractMockFactory.withFixture(AbstractMockFactory.scala:34)
+	at org.scalamock.scalatest.AbstractMockFactory.withFixture$(AbstractMockFactory.scala:31)
+	at org.apache.openwhisk.core.containerpool.test.ContainerPoolObjectTests.withFixture(ContainerPoolTests.scala:996)
+	at org.scalatest.FlatSpecLike.invokeWithFixture$1(FlatSpecLike.scala:1680)
+	at org.scalatest.FlatSpecLike.$anonfun$runTest$1(FlatSpecLike.scala:1692)
+	at org.scalatest.SuperEngine.runTestImpl(Engine.scala:286)
+	at org.scalatest.FlatSpecLike.runTest(FlatSpecLike.scala:1692)
+	at org.scalatest.FlatSpecLike.runTest$(FlatSpecLike.scala:1674)
+	at org.scalatest.FlatSpec.runTest(FlatSpec.scala:1685)
+	at org.scalatest.FlatSpecLike.$anonfun$runTests$1(FlatSpecLike.scala:1750)
+	at org.scalatest.SuperEngine.$anonfun$runTestsInBranch$1(Engine.scala:393)
+	at scala.collection.immutable.List.foreach(List.scala:431)
+	at org.scalatest.SuperEngine.traverseSubNodes$1(Engine.scala:381)
+	at org.scalatest.SuperEngine.runTestsInBranch(Engine.scala:370)
+	at org.scalatest.SuperEngine.$anonfun$runTestsInBranch$1(Engine.scala:407)
+	at scala.collection.immutable.List.foreach(List.scala:431)
+	at org.scalatest.SuperEngine.traverseSubNodes$1(Engine.scala:381)
+	at org.scalatest.SuperEngine.runTestsInBranch(Engine.scala:376)
+	at org.scalatest.SuperEngine.runTestsImpl(Engine.scala:458)
+	at org.scalatest.FlatSpecLike.runTests(FlatSpecLike.scala:1750)
+	at org.scalatest.FlatSpecLike.runTests$(FlatSpecLike.scala:1749)
+	at org.scalatest.FlatSpec.runTests(FlatSpec.scala:1685)
+	at org.scalatest.Suite.run(Suite.scala:1124)
+	at org.scalatest.Suite.run$(Suite.scala:1106)
+	at org.scalatest.FlatSpec.org$scalatest$FlatSpecLike$$super$run(FlatSpec.scala:1685)
+	at org.scalatest.FlatSpecLike.$anonfun$run$1(FlatSpecLike.scala:1795)
+	at org.scalatest.SuperEngine.runImpl(Engine.scala:518)
+	at org.scalatest.FlatSpecLike.run(FlatSpecLike.scala:1795)
+	at org.scalatest.FlatSpecLike.run$(FlatSpecLike.scala:1793)
+	at org.scalatest.FlatSpec.run(FlatSpec.scala:1685)
+	at org.scalatest.junit.JUnitRunner.run(JUnitRunner.scala:100)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at jdk.proxy1/jdk.proxy1.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:119)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:414)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.AssertionError: could not determine openwhisk home [in thread &quot;Test worker-ScalaTest-running-ContainerPoolObjectTests&quot;]
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at common.WhiskProperties.&lt;clinit&gt;(WhiskProperties.java:98)
+	at org.apache.openwhisk.core.containerpool.test.ContainerPoolObjectTests.$anonfun$new$57(ContainerPoolTests.scala:1101)
+	... 70 more
+</pre>
+</span>
+</div>
+</div>
+<div id="tab1" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">ContainerPool schedule() should not provide a container if idle pool is empty</td>
+<td class="success">0.003s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">ContainerPool schedule() should not reuse a container from idle pool with non-warm containers</td>
+<td class="success">0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">ContainerPool schedule() should not reuse a warm container with different action name</td>
+<td class="success">0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">ContainerPool schedule() should not reuse a warm container with different action version</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">ContainerPool schedule() should not reuse a warm container with different invocation namespace</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="failures">ContainerPool schedule() should not use a container when active activation count &gt;= maxconcurrent</td>
+<td class="failures">0.001s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="success">ContainerPool schedule() should reuse an applicable warm container from idle pool with one container</td>
+<td class="success">0.006s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">ContainerPool schedule() should reuse an applicable warm container from idle pool with several applicable containers</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">ContainerPool schedule() should reuse an applicable warm container from idle pool with several different containers</td>
+<td class="success">0.004s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="failures">ContainerPool schedule() should use a warming when active activation count &lt; maxconcurrent</td>
+<td class="failures">0.001s</td>
+<td class="failures">failed</td>
+</tr>
+</table>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>[2022-12-06T21:12:52.766Z] [INFO] Shutting down remote daemon.
+[2022-12-06T21:12:52.766Z] [INFO] Remote daemon shut down; proceeding with flushing remote transports.
+[2022-12-06T21:12:52.766Z] [INFO] Remoting shut down.
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 6.9.1</a> at 2022年12月6日 21:13:08</p>
+</div>
+</div>
+</body>
+</html>

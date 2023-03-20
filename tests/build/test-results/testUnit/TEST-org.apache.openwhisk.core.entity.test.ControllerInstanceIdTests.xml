@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.apache.openwhisk.core.entity.test.ControllerInstanceIdTests" tests="4" skipped="0" failures="0" errors="0" timestamp="2022-12-06T13:11:48" hostname="MacBook-Pro.local" time="0.003">
+  <properties/>
+  <testcase name="ControllerInstanceId should accept usable characters" classname="org.apache.openwhisk.core.entity.test.ControllerInstanceIdTests" time="0.001"/>
+  <testcase name="ControllerInstanceId should reject unusable characters" classname="org.apache.openwhisk.core.entity.test.ControllerInstanceIdTests" time="0.001"/>
+  <testcase name="ControllerInstanceId should deserialize legacy ControllerInstanceId format" classname="org.apache.openwhisk.core.entity.test.ControllerInstanceIdTests" time="0.0"/>
+  <testcase name="ControllerInstanceId should serialize and deserialize ControllerInstanceId" classname="org.apache.openwhisk.core.entity.test.ControllerInstanceIdTests" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

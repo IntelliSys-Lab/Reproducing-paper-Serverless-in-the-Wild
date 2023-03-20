@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.apache.openwhisk.common.ForcibleSemaphoreTests" tests="5" skipped="0" failures="0" errors="0" timestamp="2022-12-06T13:12:53" hostname="MacBook-Pro.local" time="0.079">
+  <properties/>
+  <testcase name="ForcableSemaphore should not allow to acquire, force or release negative amounts of permits" classname="org.apache.openwhisk.common.ForcibleSemaphoreTests" time="0.001"/>
+  <testcase name="ForcableSemaphore should allow to acquire the defined amount of permits only" classname="org.apache.openwhisk.common.ForcibleSemaphoreTests" time="0.0"/>
+  <testcase name="ForcableSemaphore should allow to release permits again" classname="org.apache.openwhisk.common.ForcibleSemaphoreTests" time="0.0"/>
+  <testcase name="ForcableSemaphore should allow to force permits, delaying the acceptance of 'usual' permits until all of forced permits are released" classname="org.apache.openwhisk.common.ForcibleSemaphoreTests" time="0.0"/>
+  <testcase name="ForcableSemaphore should not give away more permits even under concurrent load" classname="org.apache.openwhisk.common.ForcibleSemaphoreTests" time="0.078"/>
+  <system-out><![CDATA[[2022-12-06T21:12:53.336Z] [INFO] Shutting down remote daemon.
+[2022-12-06T21:12:53.336Z] [INFO] Remote daemon shut down; proceeding with flushing remote transports.
+[2022-12-06T21:12:53.336Z] [INFO] Remoting shut down.
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

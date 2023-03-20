@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.apache.openwhisk.common.TransactionIdTests" tests="6" skipped="0" failures="0" errors="0" timestamp="2022-12-06T13:13:08" hostname="MacBook-Pro.local" time="0.003">
+  <properties/>
+  <testcase name="TransactionId deserialization should deserialize with parent tid" classname="org.apache.openwhisk.common.TransactionIdTests" time="0.001"/>
+  <testcase name="TransactionId deserialization should deserialize with parent tid and extraLogging parameter" classname="org.apache.openwhisk.common.TransactionIdTests" time="0.0"/>
+  <testcase name="TransactionId deserialization should deserialize without parent tid" classname="org.apache.openwhisk.common.TransactionIdTests" time="0.0"/>
+  <testcase name="TransactionId serialization should serialize with parent tid" classname="org.apache.openwhisk.common.TransactionIdTests" time="0.0"/>
+  <testcase name="TransactionId serialization should serialize with parent tid and extraLogging parameter" classname="org.apache.openwhisk.common.TransactionIdTests" time="0.0"/>
+  <testcase name="TransactionId serialization should serialize without parent tid" classname="org.apache.openwhisk.common.TransactionIdTests" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

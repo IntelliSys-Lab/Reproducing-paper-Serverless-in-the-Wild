@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.apache.openwhisk.common.ConfigMXBeanTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-12-06T13:12:53" hostname="MacBook-Pro.local" time="0.002">
+  <properties/>
+  <testcase name="ConfigMBean should return config at path" classname="org.apache.openwhisk.common.ConfigMXBeanTests" time="0.002"/>
+  <system-out><![CDATA[[2022-12-06T21:12:53.495Z] [INFO] Shutting down remote daemon.
+[2022-12-06T21:12:53.495Z] [INFO] Remote daemon shut down; proceeding with flushing remote transports.
+[2022-12-06T21:12:53.495Z] [INFO] Remoting shut down.
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

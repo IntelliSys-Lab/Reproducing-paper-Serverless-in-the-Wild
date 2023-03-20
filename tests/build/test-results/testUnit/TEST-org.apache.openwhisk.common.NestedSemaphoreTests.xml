@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.apache.openwhisk.common.NestedSemaphoreTests" tests="2" skipped="0" failures="0" errors="0" timestamp="2022-12-06T13:12:53" hostname="MacBook-Pro.local" time="0.06">
+  <properties/>
+  <testcase name="NestedSemaphore should allow acquire of concurrency permits before acquire of memory permits" classname="org.apache.openwhisk.common.NestedSemaphoreTests" time="0.003"/>
+  <testcase name="NestedSemaphore should not give away more permits even under concurrent load" classname="org.apache.openwhisk.common.NestedSemaphoreTests" time="0.057"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

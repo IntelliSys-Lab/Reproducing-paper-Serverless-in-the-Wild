@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.apache.openwhisk.core.connector.tests.AcknowledgementMessageTests" tests="4" skipped="0" failures="0" errors="0" timestamp="2022-12-06T13:12:53" hostname="MacBook-Pro.local" time="0.017">
+  <properties/>
+  <testcase name="acknowledgement message should serialize and deserialize a Result message with Left result" classname="org.apache.openwhisk.core.connector.tests.AcknowledgementMessageTests" time="0.007"/>
+  <testcase name="acknowledgement message should serialize and deserialize a Result message with Right result" classname="org.apache.openwhisk.core.connector.tests.AcknowledgementMessageTests" time="0.001"/>
+  <testcase name="acknowledgement message should serialize and deserialize a Completion message" classname="org.apache.openwhisk.core.connector.tests.AcknowledgementMessageTests" time="0.004"/>
+  <testcase name="acknowledgement message should serialize and deserialize a CombinedCompletionAndResultMessage" classname="org.apache.openwhisk.core.connector.tests.AcknowledgementMessageTests" time="0.005"/>
+  <system-out><![CDATA[[2022-12-06T21:12:53.265Z] [INFO] Shutting down remote daemon.
+[2022-12-06T21:12:53.265Z] [INFO] Remote daemon shut down; proceeding with flushing remote transports.
+[2022-12-06T21:12:53.265Z] [INFO] Remoting shut down.
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

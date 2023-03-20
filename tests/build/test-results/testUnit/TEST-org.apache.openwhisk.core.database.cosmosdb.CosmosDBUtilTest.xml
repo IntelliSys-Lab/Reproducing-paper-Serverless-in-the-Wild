@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.apache.openwhisk.core.database.cosmosdb.CosmosDBUtilTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2022-12-06T13:11:48" hostname="MacBook-Pro.local" time="0.004">
+  <properties/>
+  <testcase name="prepare field should always have id" classname="org.apache.openwhisk.core.database.cosmosdb.CosmosDBUtilTest" time="0.002"/>
+  <testcase name="prepare field should build a json like string" classname="org.apache.openwhisk.core.database.cosmosdb.CosmosDBUtilTest" time="0.0"/>
+  <testcase name="prepare field should support nested fields" classname="org.apache.openwhisk.core.database.cosmosdb.CosmosDBUtilTest" time="0.0"/>
+  <testcase name="escaping should escape /" classname="org.apache.openwhisk.core.database.cosmosdb.CosmosDBUtilTest" time="0.0"/>
+  <testcase name="escaping should throw exception when input contains replacement char |" classname="org.apache.openwhisk.core.database.cosmosdb.CosmosDBUtilTest" time="0.001"/>
+  <testcase name="escaping should support unescaping" classname="org.apache.openwhisk.core.database.cosmosdb.CosmosDBUtilTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

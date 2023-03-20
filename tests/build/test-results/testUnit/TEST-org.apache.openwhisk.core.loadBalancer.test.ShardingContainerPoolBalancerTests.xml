@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.apache.openwhisk.core.loadBalancer.test.ShardingContainerPoolBalancerTests" tests="1" skipped="0" failures="1" errors="0" timestamp="2022-12-06T13:11:47" hostname="MacBook-Pro.local" time="0.002">
+  <properties/>
+  <testcase name="initializationError" classname="org.apache.openwhisk.core.loadBalancer.test.ShardingContainerPoolBalancerTests" time="0.002">
+    <failure message="org.scalatest.exceptions.TestFailedException: Failure(java.lang.NullPointerException: Cannot invoke &quot;String.length()&quot; because &quot;this.string&quot; is null) was not a success" type="org.scalatest.exceptions.TestFailedException">org.scalatest.exceptions.TestFailedException: Failure(java.lang.NullPointerException: Cannot invoke &quot;String.length()&quot; because &quot;this.string&quot; is null) was not a success
+	at org.scalatest.MatchersHelper$.indicateFailure(MatchersHelper.scala:343)
+	at org.scalatest.Matchers$ResultOfBeWordForAny.a(Matchers.scala:2022)
+	at org.apache.openwhisk.core.entity.test.ExecHelpers.$init$(ExecHelpers.scala:36)
+	at org.apache.openwhisk.core.loadBalancer.test.ShardingContainerPoolBalancerTests.&lt;init&gt;(ShardingContainerPoolBalancerTests.scala:79)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.ReflectAccess.newInstance(ReflectAccess.java:128)
+	at java.base/jdk.internal.reflect.ReflectionFactory.newInstance(ReflectionFactory.java:306)
+	at java.base/java.lang.Class.newInstance(Class.java:684)
+	at org.scalatest.junit.JUnitRunner.&lt;init&gt;(JUnitRunner.scala:65)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.junit.internal.builders.AnnotatedBuilder.buildRunner(AnnotatedBuilder.java:104)
+	at org.junit.internal.builders.AnnotatedBuilder.runnerForClass(AnnotatedBuilder.java:86)
+	at org.junit.runners.model.RunnerBuilder.safeRunnerForClass(RunnerBuilder.java:70)
+	at org.junit.internal.builders.AllDefaultPossibilitiesBuilder.runnerForClass(AllDefaultPossibilitiesBuilder.java:37)
+	at org.junit.runners.model.RunnerBuilder.safeRunnerForClass(RunnerBuilder.java:70)
+	at org.junit.internal.requests.ClassRequest.createRunner(ClassRequest.java:28)
+	at org.junit.internal.requests.MemoizingRequest.getRunner(MemoizingRequest.java:19)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:78)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at jdk.proxy1/jdk.proxy1.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:119)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:414)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+</failure>
+  </testcase>
+  <system-out><![CDATA[[2022-12-06T21:11:47.640Z] [INFO] Remoting started with transport [Artery tcp]; listening on address [akka://default@127.0.0.1:25520] with UID [8309951866008207577]
+[2022-12-06T21:11:47.648Z] [INFO] Cluster Node [akka://default@127.0.0.1:25520] - Starting up, Akka version [2.6.12] ...
+[2022-12-06T21:11:47.668Z] [INFO] Cluster Node [akka://default@127.0.0.1:25520] - Registered cluster JMX MBean [akka:type=Cluster]
+[2022-12-06T21:11:47.668Z] [INFO] Cluster Node [akka://default@127.0.0.1:25520] - Started up successfully
+[2022-12-06T21:11:47.679Z] [INFO] Cluster Node [akka://default@127.0.0.1:25520] - No downing-provider-class configured, manual cluster downing required, see https://doc.akka.io/docs/akka/current/typed/cluster.html#downing
+[2022-12-06T21:11:47.679Z] [INFO] Cluster Node [akka://default@127.0.0.1:25520] - No seed nodes found in configuration, relying on Cluster Bootstrap for joining
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

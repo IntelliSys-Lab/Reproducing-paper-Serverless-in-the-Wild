@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.apache.openwhisk.core.entity.test.SizeTests" tests="30" skipped="0" failures="0" errors="0" timestamp="2022-12-06T13:11:49" hostname="MacBook-Pro.local" time="0.009">
+  <properties/>
+  <testcase name="Size Entity should 1 Byte smaller than 1 KB smaller than 1 MB" classname="org.apache.openwhisk.core.entity.test.SizeTests" time="0.001"/>
+  <testcase name="Size Entity should 3 Bytes smaller than 2 KB smaller than 1 MB" classname="org.apache.openwhisk.core.entity.test.SizeTests" time="0.0"/>
+  <testcase name="Size Entity should 1 MB greater than 1 KB greater than 1 Byte" classname="org.apache.openwhisk.core.entity.test.SizeTests" time="0.0"/>
+  <testcase name="Size Entity should 1 MB == 1024 KB == 1048576 B" classname="org.apache.openwhisk.core.entity.test.SizeTests" time="0.001"/>
+  <testcase name="Size Entity should 1 Byte + 1 KB = 1025 Bytes" classname="org.apache.openwhisk.core.entity.test.SizeTests" time="0.0"/>
+  <testcase name="Size Entity should 1 MB + 1 MB = 2 MB" classname="org.apache.openwhisk.core.entity.test.SizeTests" time="0.001"/>
+  <testcase name="Size Entity should 1 KB - 1B = 1023 Bytes" classname="org.apache.openwhisk.core.entity.test.SizeTests" time="0.0"/>
+  <testcase name="Size Entity should 1 MB - 1 MB = 0 MB" classname="org.apache.openwhisk.core.entity.test.SizeTests" time="0.0"/>
+  <testcase name="Size Entity should throw an exception if subtraction leads to a negative size" classname="org.apache.openwhisk.core.entity.test.SizeTests" time="0.0"/>
+  <testcase name="Size Entity should 2 B * 10 = 20 B" classname="org.apache.openwhisk.core.entity.test.SizeTests" time="0.001"/>
+  <testcase name="Size Entity should 40 MB * 2 = 80 MB" classname="org.apache.openwhisk.core.entity.test.SizeTests" time="0.0"/>
+  <testcase name="Size Entity should 5 Byte / 2 Byte = 2.5" classname="org.apache.openwhisk.core.entity.test.SizeTests" time="0.0"/>
+  <testcase name="Size Entity should 1 KB / 512 Byte = 2" classname="org.apache.openwhisk.core.entity.test.SizeTests" time="0.0"/>
+  <testcase name="Size Entity should throw an exception if division is through 0 byte" classname="org.apache.openwhisk.core.entity.test.SizeTests" time="0.001"/>
+  <testcase name="Size Entity should 5 Byte / 2 = 2 Byte" classname="org.apache.openwhisk.core.entity.test.SizeTests" time="0.0"/>
+  <testcase name="Size Entity should 1 MB / 512 = 2 Byte" classname="org.apache.openwhisk.core.entity.test.SizeTests" time="0.0"/>
+  <testcase name="Size Entity should not go into integer overflow for a few GB" classname="org.apache.openwhisk.core.entity.test.SizeTests" time="0.0"/>
+  <testcase name="Size Entity should throw an exception if division is through 0" classname="org.apache.openwhisk.core.entity.test.SizeTests" time="0.0"/>
+  <testcase name="Size Entity should 1024 B to KB = 1" classname="org.apache.openwhisk.core.entity.test.SizeTests" time="0.0"/>
+  <testcase name="Size Entity should 1048576 B to MB = 1" classname="org.apache.openwhisk.core.entity.test.SizeTests" time="0.0"/>
+  <testcase name="Size Entity should 1 KB to B = 1024" classname="org.apache.openwhisk.core.entity.test.SizeTests" time="0.0"/>
+  <testcase name="Size Entity should 1024 KB to MB = 1" classname="org.apache.openwhisk.core.entity.test.SizeTests" time="0.0"/>
+  <testcase name="Size Entity should 1 MB to B = 1048576" classname="org.apache.openwhisk.core.entity.test.SizeTests" time="0.0"/>
+  <testcase name="Size Entity should 1 MB to KB = 1024" classname="org.apache.openwhisk.core.entity.test.SizeTests" time="0.0"/>
+  <testcase name="Size Entity should create ObjectSize from String 3B" classname="org.apache.openwhisk.core.entity.test.SizeTests" time="0.0"/>
+  <testcase name="Size Entity should create ObjectSize from String 7K" classname="org.apache.openwhisk.core.entity.test.SizeTests" time="0.0"/>
+  <testcase name="Size Entity should create ObjectSize from String 120M" classname="org.apache.openwhisk.core.entity.test.SizeTests" time="0.0"/>
+  <testcase name="Size Entity should read and write size as JSON" classname="org.apache.openwhisk.core.entity.test.SizeTests" time="0.001"/>
+  <testcase name="Size Entity should throw error on creating ObjectSize from String 120A" classname="org.apache.openwhisk.core.entity.test.SizeTests" time="0.001"/>
+  <testcase name="Size Entity should throw error on creating ByteSize object with negative size" classname="org.apache.openwhisk.core.entity.test.SizeTests" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

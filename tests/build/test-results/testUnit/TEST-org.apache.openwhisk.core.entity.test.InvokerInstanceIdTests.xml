@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.apache.openwhisk.core.entity.test.InvokerInstanceIdTests" tests="2" skipped="0" failures="0" errors="0" timestamp="2022-12-06T13:11:48" hostname="MacBook-Pro.local" time="0.007">
+  <properties/>
+  <testcase name="InvokerInstanceIdTests should serialize and deserialize InvokerInstanceId" classname="org.apache.openwhisk.core.entity.test.InvokerInstanceIdTests" time="0.006"/>
+  <testcase name="InvokerInstanceIdTests should serialize and deserialize InvokerInstanceId with optional field" classname="org.apache.openwhisk.core.entity.test.InvokerInstanceIdTests" time="0.001"/>
+  <system-out><![CDATA[[2022-12-06T21:11:48.741Z] [INFO] Shutting down remote daemon.
+[2022-12-06T21:11:48.741Z] [INFO] Remote daemon shut down; proceeding with flushing remote transports.
+[2022-12-06T21:11:48.742Z] [INFO] Remoting shut down.
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

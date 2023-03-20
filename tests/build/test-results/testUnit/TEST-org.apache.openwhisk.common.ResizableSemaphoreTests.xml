@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.apache.openwhisk.common.ResizableSemaphoreTests" tests="6" skipped="0" failures="0" errors="0" timestamp="2022-12-06T13:12:53" hostname="MacBook-Pro.local" time="0.065">
+  <properties/>
+  <testcase name="ResizableSemaphore should not allow to acquire, force or release negative amounts of permits" classname="org.apache.openwhisk.common.ResizableSemaphoreTests" time="0.0"/>
+  <testcase name="ResizableSemaphore should allow to acquire the defined amount of permits only" classname="org.apache.openwhisk.common.ResizableSemaphoreTests" time="0.0"/>
+  <testcase name="ResizableSemaphore should allow to release permits again" classname="org.apache.openwhisk.common.ResizableSemaphoreTests" time="0.0"/>
+  <testcase name="ResizableSemaphore should allow to resize permits when factor of reductionSize is reached during release" classname="org.apache.openwhisk.common.ResizableSemaphoreTests" time="0.0"/>
+  <testcase name="ResizableSemaphore should not give away more permits even under concurrent load" classname="org.apache.openwhisk.common.ResizableSemaphoreTests" time="0.063"/>
+  <testcase name="ResizableSemaphore should release permits even under concurrent load" classname="org.apache.openwhisk.common.ResizableSemaphoreTests" time="0.002"/>
+  <system-out><![CDATA[[2022-12-06T21:12:53.510Z] [INFO] Shutting down remote daemon.
+[2022-12-06T21:12:53.510Z] [INFO] Remote daemon shut down; proceeding with flushing remote transports.
+[2022-12-06T21:12:53.510Z] [INFO] Remoting shut down.
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

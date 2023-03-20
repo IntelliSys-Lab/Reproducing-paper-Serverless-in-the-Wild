@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class org.apache.openwhisk.core.entity.test.ExecTests</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class org.apache.openwhisk.core.entity.test.ExecTests</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/org.apache.openwhisk.core.entity.test.html">org.apache.openwhisk.core.entity.test</a> &gt; ExecTests</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">9</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">4</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.219s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox failures" id="successRate">
+<div class="percent">55%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Failed tests</a>
+</li>
+<li>
+<a href="#tab1">Tests</a>
+</li>
+<li>
+<a href="#tab2">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Failed tests</h2>
+<div class="test">
+<a name="exec deserialization should properly determine binary property"></a>
+<h3 class="failures">exec deserialization should properly determine binary property</h3>
+<span class="code">
+<pre>java.lang.IllegalStateException: Runtimes manifest is not initialized.
+	at org.apache.openwhisk.core.entity.ExecManifest$.$anonfun$runtimesManifest$1(ExecManifest.scala:70)
+	at scala.Option.getOrElse(Option.scala:189)
+	at org.apache.openwhisk.core.entity.ExecManifest$.runtimesManifest(ExecManifest.scala:70)
+	at org.apache.openwhisk.core.entity.Exec$.org$apache$openwhisk$core$entity$Exec$$execManifests(Exec.scala:249)
+	at org.apache.openwhisk.core.entity.Exec$$anon$1.read(Exec.scala:325)
+	at org.apache.openwhisk.core.entity.Exec$$anon$1.read(Exec.scala:251)
+	at org.apache.openwhisk.core.entity.test.ExecTests.$anonfun$new$2(ExecTests.scala:89)
+	at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
+	at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
+	at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+	at org.scalatest.Transformer.apply(Transformer.scala:22)
+	at org.scalatest.Transformer.apply(Transformer.scala:20)
+	at org.scalatest.FlatSpecLike$$anon$5.apply(FlatSpecLike.scala:1682)
+	at org.scalatest.TestSuite.withFixture(TestSuite.scala:196)
+	at org.scalatest.TestSuite.withFixture$(TestSuite.scala:195)
+	at org.scalatest.FlatSpec.withFixture(FlatSpec.scala:1685)
+	at org.scalatest.FlatSpecLike.invokeWithFixture$1(FlatSpecLike.scala:1680)
+	at org.scalatest.FlatSpecLike.$anonfun$runTest$1(FlatSpecLike.scala:1692)
+	at org.scalatest.SuperEngine.runTestImpl(Engine.scala:286)
+	at org.scalatest.FlatSpecLike.runTest(FlatSpecLike.scala:1692)
+	at org.scalatest.FlatSpecLike.runTest$(FlatSpecLike.scala:1674)
+	at org.scalatest.FlatSpec.runTest(FlatSpec.scala:1685)
+	at org.scalatest.FlatSpecLike.$anonfun$runTests$1(FlatSpecLike.scala:1750)
+	at org.scalatest.SuperEngine.$anonfun$runTestsInBranch$1(Engine.scala:393)
+	at scala.collection.immutable.List.foreach(List.scala:431)
+	at org.scalatest.SuperEngine.traverseSubNodes$1(Engine.scala:381)
+	at org.scalatest.SuperEngine.runTestsInBranch(Engine.scala:370)
+	at org.scalatest.SuperEngine.$anonfun$runTestsInBranch$1(Engine.scala:407)
+	at scala.collection.immutable.List.foreach(List.scala:431)
+	at org.scalatest.SuperEngine.traverseSubNodes$1(Engine.scala:381)
+	at org.scalatest.SuperEngine.runTestsInBranch(Engine.scala:376)
+	at org.scalatest.SuperEngine.runTestsImpl(Engine.scala:458)
+	at org.scalatest.FlatSpecLike.runTests(FlatSpecLike.scala:1750)
+	at org.scalatest.FlatSpecLike.runTests$(FlatSpecLike.scala:1749)
+	at org.scalatest.FlatSpec.runTests(FlatSpec.scala:1685)
+	at org.scalatest.Suite.run(Suite.scala:1124)
+	at org.scalatest.Suite.run$(Suite.scala:1106)
+	at org.scalatest.FlatSpec.org$scalatest$FlatSpecLike$$super$run(FlatSpec.scala:1685)
+	at org.scalatest.FlatSpecLike.$anonfun$run$1(FlatSpecLike.scala:1795)
+	at org.scalatest.SuperEngine.runImpl(Engine.scala:518)
+	at org.scalatest.FlatSpecLike.run(FlatSpecLike.scala:1795)
+	at org.scalatest.FlatSpecLike.run$(FlatSpecLike.scala:1793)
+	at org.apache.openwhisk.core.entity.test.ExecTests.org$scalatest$BeforeAndAfterAll$$super$run(ExecTests.scala:41)
+	at org.scalatest.BeforeAndAfterAll.liftedTree1$1(BeforeAndAfterAll.scala:213)
+	at org.scalatest.BeforeAndAfterAll.run(BeforeAndAfterAll.scala:210)
+	at org.scalatest.BeforeAndAfterAll.run$(BeforeAndAfterAll.scala:208)
+	at org.apache.openwhisk.core.entity.test.ExecTests.run(ExecTests.scala:41)
+	at org.scalatest.junit.JUnitRunner.run(JUnitRunner.scala:100)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at jdk.proxy1/jdk.proxy1.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:119)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:414)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="exec deserialization should read code stored as attachment"></a>
+<h3 class="failures">exec deserialization should read code stored as attachment</h3>
+<span class="code">
+<pre>java.lang.IllegalStateException: Runtimes manifest is not initialized.
+	at org.apache.openwhisk.core.entity.ExecManifest$.$anonfun$runtimesManifest$1(ExecManifest.scala:70)
+	at scala.Option.getOrElse(Option.scala:189)
+	at org.apache.openwhisk.core.entity.ExecManifest$.runtimesManifest(ExecManifest.scala:70)
+	at org.apache.openwhisk.core.entity.Exec$.org$apache$openwhisk$core$entity$Exec$$execManifests(Exec.scala:249)
+	at org.apache.openwhisk.core.entity.Exec$$anon$1.read(Exec.scala:325)
+	at org.apache.openwhisk.core.entity.Exec$$anon$1.read(Exec.scala:251)
+	at org.apache.openwhisk.core.entity.test.ExecTests.$anonfun$new$3(ExecTests.scala:124)
+	at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
+	at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
+	at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+	at org.scalatest.Transformer.apply(Transformer.scala:22)
+	at org.scalatest.Transformer.apply(Transformer.scala:20)
+	at org.scalatest.FlatSpecLike$$anon$5.apply(FlatSpecLike.scala:1682)
+	at org.scalatest.TestSuite.withFixture(TestSuite.scala:196)
+	at org.scalatest.TestSuite.withFixture$(TestSuite.scala:195)
+	at org.scalatest.FlatSpec.withFixture(FlatSpec.scala:1685)
+	at org.scalatest.FlatSpecLike.invokeWithFixture$1(FlatSpecLike.scala:1680)
+	at org.scalatest.FlatSpecLike.$anonfun$runTest$1(FlatSpecLike.scala:1692)
+	at org.scalatest.SuperEngine.runTestImpl(Engine.scala:286)
+	at org.scalatest.FlatSpecLike.runTest(FlatSpecLike.scala:1692)
+	at org.scalatest.FlatSpecLike.runTest$(FlatSpecLike.scala:1674)
+	at org.scalatest.FlatSpec.runTest(FlatSpec.scala:1685)
+	at org.scalatest.FlatSpecLike.$anonfun$runTests$1(FlatSpecLike.scala:1750)
+	at org.scalatest.SuperEngine.$anonfun$runTestsInBranch$1(Engine.scala:393)
+	at scala.collection.immutable.List.foreach(List.scala:431)
+	at org.scalatest.SuperEngine.traverseSubNodes$1(Engine.scala:381)
+	at org.scalatest.SuperEngine.runTestsInBranch(Engine.scala:370)
+	at org.scalatest.SuperEngine.$anonfun$runTestsInBranch$1(Engine.scala:407)
+	at scala.collection.immutable.List.foreach(List.scala:431)
+	at org.scalatest.SuperEngine.traverseSubNodes$1(Engine.scala:381)
+	at org.scalatest.SuperEngine.runTestsInBranch(Engine.scala:376)
+	at org.scalatest.SuperEngine.runTestsImpl(Engine.scala:458)
+	at org.scalatest.FlatSpecLike.runTests(FlatSpecLike.scala:1750)
+	at org.scalatest.FlatSpecLike.runTests$(FlatSpecLike.scala:1749)
+	at org.scalatest.FlatSpec.runTests(FlatSpec.scala:1685)
+	at org.scalatest.Suite.run(Suite.scala:1124)
+	at org.scalatest.Suite.run$(Suite.scala:1106)
+	at org.scalatest.FlatSpec.org$scalatest$FlatSpecLike$$super$run(FlatSpec.scala:1685)
+	at org.scalatest.FlatSpecLike.$anonfun$run$1(FlatSpecLike.scala:1795)
+	at org.scalatest.SuperEngine.runImpl(Engine.scala:518)
+	at org.scalatest.FlatSpecLike.run(FlatSpecLike.scala:1795)
+	at org.scalatest.FlatSpecLike.run$(FlatSpecLike.scala:1793)
+	at org.apache.openwhisk.core.entity.test.ExecTests.org$scalatest$BeforeAndAfterAll$$super$run(ExecTests.scala:41)
+	at org.scalatest.BeforeAndAfterAll.liftedTree1$1(BeforeAndAfterAll.scala:213)
+	at org.scalatest.BeforeAndAfterAll.run(BeforeAndAfterAll.scala:210)
+	at org.scalatest.BeforeAndAfterAll.run$(BeforeAndAfterAll.scala:208)
+	at org.apache.openwhisk.core.entity.test.ExecTests.run(ExecTests.scala:41)
+	at org.scalatest.junit.JUnitRunner.run(JUnitRunner.scala:100)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at jdk.proxy1/jdk.proxy1.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:119)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:414)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="exec deserialization should read code stored as jar property"></a>
+<h3 class="failures">exec deserialization should read code stored as jar property</h3>
+<span class="code">
+<pre>java.lang.IllegalStateException: Runtimes manifest is not initialized.
+	at org.apache.openwhisk.core.entity.ExecManifest$.$anonfun$runtimesManifest$1(ExecManifest.scala:70)
+	at scala.Option.getOrElse(Option.scala:189)
+	at org.apache.openwhisk.core.entity.ExecManifest$.runtimesManifest(ExecManifest.scala:70)
+	at org.apache.openwhisk.core.entity.Exec$.org$apache$openwhisk$core$entity$Exec$$execManifests(Exec.scala:249)
+	at org.apache.openwhisk.core.entity.Exec$$anon$1.read(Exec.scala:325)
+	at org.apache.openwhisk.core.entity.Exec$$anon$1.read(Exec.scala:251)
+	at org.apache.openwhisk.core.entity.test.ExecTests.$anonfun$new$4(ExecTests.scala:135)
+	at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
+	at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
+	at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+	at org.scalatest.Transformer.apply(Transformer.scala:22)
+	at org.scalatest.Transformer.apply(Transformer.scala:20)
+	at org.scalatest.FlatSpecLike$$anon$5.apply(FlatSpecLike.scala:1682)
+	at org.scalatest.TestSuite.withFixture(TestSuite.scala:196)
+	at org.scalatest.TestSuite.withFixture$(TestSuite.scala:195)
+	at org.scalatest.FlatSpec.withFixture(FlatSpec.scala:1685)
+	at org.scalatest.FlatSpecLike.invokeWithFixture$1(FlatSpecLike.scala:1680)
+	at org.scalatest.FlatSpecLike.$anonfun$runTest$1(FlatSpecLike.scala:1692)
+	at org.scalatest.SuperEngine.runTestImpl(Engine.scala:286)
+	at org.scalatest.FlatSpecLike.runTest(FlatSpecLike.scala:1692)
+	at org.scalatest.FlatSpecLike.runTest$(FlatSpecLike.scala:1674)
+	at org.scalatest.FlatSpec.runTest(FlatSpec.scala:1685)
+	at org.scalatest.FlatSpecLike.$anonfun$runTests$1(FlatSpecLike.scala:1750)
+	at org.scalatest.SuperEngine.$anonfun$runTestsInBranch$1(Engine.scala:393)
+	at scala.collection.immutable.List.foreach(List.scala:431)
+	at org.scalatest.SuperEngine.traverseSubNodes$1(Engine.scala:381)
+	at org.scalatest.SuperEngine.runTestsInBranch(Engine.scala:370)
+	at org.scalatest.SuperEngine.$anonfun$runTestsInBranch$1(Engine.scala:407)
+	at scala.collection.immutable.List.foreach(List.scala:431)
+	at org.scalatest.SuperEngine.traverseSubNodes$1(Engine.scala:381)
+	at org.scalatest.SuperEngine.runTestsInBranch(Engine.scala:376)
+	at org.scalatest.SuperEngine.runTestsImpl(Engine.scala:458)
+	at org.scalatest.FlatSpecLike.runTests(FlatSpecLike.scala:1750)
+	at org.scalatest.FlatSpecLike.runTests$(FlatSpecLike.scala:1749)
+	at org.scalatest.FlatSpec.runTests(FlatSpec.scala:1685)
+	at org.scalatest.Suite.run(Suite.scala:1124)
+	at org.scalatest.Suite.run$(Suite.scala:1106)
+	at org.scalatest.FlatSpec.org$scalatest$FlatSpecLike$$super$run(FlatSpec.scala:1685)
+	at org.scalatest.FlatSpecLike.$anonfun$run$1(FlatSpecLike.scala:1795)
+	at org.scalatest.SuperEngine.runImpl(Engine.scala:518)
+	at org.scalatest.FlatSpecLike.run(FlatSpecLike.scala:1795)
+	at org.scalatest.FlatSpecLike.run$(FlatSpecLike.scala:1793)
+	at org.apache.openwhisk.core.entity.test.ExecTests.org$scalatest$BeforeAndAfterAll$$super$run(ExecTests.scala:41)
+	at org.scalatest.BeforeAndAfterAll.liftedTree1$1(BeforeAndAfterAll.scala:213)
+	at org.scalatest.BeforeAndAfterAll.run(BeforeAndAfterAll.scala:210)
+	at org.scalatest.BeforeAndAfterAll.run$(BeforeAndAfterAll.scala:208)
+	at org.apache.openwhisk.core.entity.test.ExecTests.run(ExecTests.scala:41)
+	at org.scalatest.junit.JUnitRunner.run(JUnitRunner.scala:100)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at jdk.proxy1/jdk.proxy1.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:119)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:414)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="exec deserialization should read existing code string as attachment"></a>
+<h3 class="failures">exec deserialization should read existing code string as attachment</h3>
+<span class="code">
+<pre>java.lang.IllegalStateException: Runtimes manifest is not initialized.
+	at org.apache.openwhisk.core.entity.ExecManifest$.$anonfun$runtimesManifest$1(ExecManifest.scala:70)
+	at scala.Option.getOrElse(Option.scala:189)
+	at org.apache.openwhisk.core.entity.ExecManifest$.runtimesManifest(ExecManifest.scala:70)
+	at org.apache.openwhisk.core.entity.Exec$.org$apache$openwhisk$core$entity$Exec$$execManifests(Exec.scala:249)
+	at org.apache.openwhisk.core.entity.Exec$$anon$1.read(Exec.scala:325)
+	at org.apache.openwhisk.core.entity.Exec$$anon$1.read(Exec.scala:251)
+	at spray.json.ProductFormats.fromField(ProductFormats.scala:58)
+	at spray.json.ProductFormats.fromField$(ProductFormats.scala:51)
+	at org.apache.openwhisk.core.entity.WhiskAction$.fromField(WhiskAction.scala:349)
+	at spray.json.ProductFormatsInstances$$anon$9.read(ProductFormatsInstances.scala:263)
+	at spray.json.ProductFormatsInstances$$anon$9.read(ProductFormatsInstances.scala:245)
+	at org.apache.openwhisk.core.entity.test.ExecTests.$anonfun$new$1(ExecTests.scala:79)
+	at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
+	at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
+	at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+	at org.scalatest.Transformer.apply(Transformer.scala:22)
+	at org.scalatest.Transformer.apply(Transformer.scala:20)
+	at org.scalatest.FlatSpecLike$$anon$5.apply(FlatSpecLike.scala:1682)
+	at org.scalatest.TestSuite.withFixture(TestSuite.scala:196)
+	at org.scalatest.TestSuite.withFixture$(TestSuite.scala:195)
+	at org.scalatest.FlatSpec.withFixture(FlatSpec.scala:1685)
+	at org.scalatest.FlatSpecLike.invokeWithFixture$1(FlatSpecLike.scala:1680)
+	at org.scalatest.FlatSpecLike.$anonfun$runTest$1(FlatSpecLike.scala:1692)
+	at org.scalatest.SuperEngine.runTestImpl(Engine.scala:286)
+	at org.scalatest.FlatSpecLike.runTest(FlatSpecLike.scala:1692)
+	at org.scalatest.FlatSpecLike.runTest$(FlatSpecLike.scala:1674)
+	at org.scalatest.FlatSpec.runTest(FlatSpec.scala:1685)
+	at org.scalatest.FlatSpecLike.$anonfun$runTests$1(FlatSpecLike.scala:1750)
+	at org.scalatest.SuperEngine.$anonfun$runTestsInBranch$1(Engine.scala:393)
+	at scala.collection.immutable.List.foreach(List.scala:431)
+	at org.scalatest.SuperEngine.traverseSubNodes$1(Engine.scala:381)
+	at org.scalatest.SuperEngine.runTestsInBranch(Engine.scala:370)
+	at org.scalatest.SuperEngine.$anonfun$runTestsInBranch$1(Engine.scala:407)
+	at scala.collection.immutable.List.foreach(List.scala:431)
+	at org.scalatest.SuperEngine.traverseSubNodes$1(Engine.scala:381)
+	at org.scalatest.SuperEngine.runTestsInBranch(Engine.scala:376)
+	at org.scalatest.SuperEngine.runTestsImpl(Engine.scala:458)
+	at org.scalatest.FlatSpecLike.runTests(FlatSpecLike.scala:1750)
+	at org.scalatest.FlatSpecLike.runTests$(FlatSpecLike.scala:1749)
+	at org.scalatest.FlatSpec.runTests(FlatSpec.scala:1685)
+	at org.scalatest.Suite.run(Suite.scala:1124)
+	at org.scalatest.Suite.run$(Suite.scala:1106)
+	at org.scalatest.FlatSpec.org$scalatest$FlatSpecLike$$super$run(FlatSpec.scala:1685)
+	at org.scalatest.FlatSpecLike.$anonfun$run$1(FlatSpecLike.scala:1795)
+	at org.scalatest.SuperEngine.runImpl(Engine.scala:518)
+	at org.scalatest.FlatSpecLike.run(FlatSpecLike.scala:1795)
+	at org.scalatest.FlatSpecLike.run$(FlatSpecLike.scala:1793)
+	at org.apache.openwhisk.core.entity.test.ExecTests.org$scalatest$BeforeAndAfterAll$$super$run(ExecTests.scala:41)
+	at org.scalatest.BeforeAndAfterAll.liftedTree1$1(BeforeAndAfterAll.scala:213)
+	at org.scalatest.BeforeAndAfterAll.run(BeforeAndAfterAll.scala:210)
+	at org.scalatest.BeforeAndAfterAll.run$(BeforeAndAfterAll.scala:208)
+	at org.apache.openwhisk.core.entity.test.ExecTests.run(ExecTests.scala:41)
+	at org.scalatest.junit.JUnitRunner.run(JUnitRunner.scala:100)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at jdk.proxy1/jdk.proxy1.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:119)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:414)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+</pre>
+</span>
+</div>
+</div>
+<div id="tab1" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">blackbox exec deserialization should properly determine binary property</td>
+<td class="success">0.046s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">blackbox exec deserialization should read existing code string as attachment</td>
+<td class="success">0.023s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">blackbox exec serialization should serialize with attached attachment</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">blackbox exec serialization should serialize with inline attachment</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="failures">exec deserialization should properly determine binary property</td>
+<td class="failures">0.001s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="failures">exec deserialization should read code stored as attachment</td>
+<td class="failures">0s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="failures">exec deserialization should read code stored as jar property</td>
+<td class="failures">0s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="failures">exec deserialization should read existing code string as attachment</td>
+<td class="failures">0.108s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="success">exec deserialization should read existing code string as string with old manifest</td>
+<td class="success">0.038s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>[2022-12-06T21:11:48.805Z] [INFO] Shutting down remote daemon.
+[2022-12-06T21:11:48.805Z] [INFO] Remote daemon shut down; proceeding with flushing remote transports.
+[2022-12-06T21:11:48.805Z] [INFO] Remoting shut down.
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 6.9.1</a> at 2022年12月6日 21:13:08</p>
+</div>
+</div>
+</body>
+</html>

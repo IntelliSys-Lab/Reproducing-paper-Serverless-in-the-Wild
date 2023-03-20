@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.apache.openwhisk.core.containerpool.kubernetes.test.WhiskPodBuilderTests" tests="6" skipped="0" failures="0" errors="0" timestamp="2022-12-06T13:12:52" hostname="MacBook-Pro.local" time="0.202">
+  <properties/>
+  <testcase name="WhiskPodBuilder should build a new pod" classname="org.apache.openwhisk.core.containerpool.kubernetes.test.WhiskPodBuilderTests" time="0.112"/>
+  <testcase name="WhiskPodBuilder should build set cpu scaled based on memory, if enabled in configuration" classname="org.apache.openwhisk.core.containerpool.kubernetes.test.WhiskPodBuilderTests" time="0.003"/>
+  <testcase name="WhiskPodBuilder should set ephemeral storage when configured" classname="org.apache.openwhisk.core.containerpool.kubernetes.test.WhiskPodBuilderTests" time="0.001"/>
+  <testcase name="WhiskPodBuilder should extend existing pod template" classname="org.apache.openwhisk.core.containerpool.kubernetes.test.WhiskPodBuilderTests" time="0.075"/>
+  <testcase name="WhiskPodBuilder should build a pod disruption budget for the pod, if enabled" classname="org.apache.openwhisk.core.containerpool.kubernetes.test.WhiskPodBuilderTests" time="0.001"/>
+  <testcase name="WhiskPodBuilder should extend existing pod template with affinity" classname="org.apache.openwhisk.core.containerpool.kubernetes.test.WhiskPodBuilderTests" time="0.008"/>
+  <system-out><![CDATA[[2022-12-06T21:12:52.933Z] [INFO] Shutting down remote daemon.
+[2022-12-06T21:12:52.933Z] [INFO] Remote daemon shut down; proceeding with flushing remote transports.
+[2022-12-06T21:12:52.934Z] [INFO] Remoting shut down.
+]]></system-out>
+  <system-err><![CDATA[12月 06, 2022 9:12:53 下午 okhttp3.mockwebserver.MockWebServer$2 acceptConnections
+信息: MockWebServer[52480] done accepting connections: Socket closed
+]]></system-err>
+</testsuite>

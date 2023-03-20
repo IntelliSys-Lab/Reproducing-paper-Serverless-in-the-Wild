@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.apache.openwhisk.core.database.cosmosdb.ReferenceCountedTests" tests="4" skipped="0" failures="0" errors="0" timestamp="2022-12-06T13:11:48" hostname="MacBook-Pro.local" time="0.002">
+  <properties/>
+  <testcase name="ReferenceCounted should close only once" classname="org.apache.openwhisk.core.database.cosmosdb.ReferenceCountedTests" time="0.001"/>
+  <testcase name="ReferenceCounted should not close with one reference active" classname="org.apache.openwhisk.core.database.cosmosdb.ReferenceCountedTests" time="0.0"/>
+  <testcase name="ReferenceCounted should be closed when all reference close" classname="org.apache.openwhisk.core.database.cosmosdb.ReferenceCountedTests" time="0.0"/>
+  <testcase name="ReferenceCounted should throw exception if closed" classname="org.apache.openwhisk.core.database.cosmosdb.ReferenceCountedTests" time="0.0"/>
+  <system-out><![CDATA[[2022-12-06T21:11:48.618Z] [INFO] Shutting down remote daemon.
+[2022-12-06T21:11:48.619Z] [INFO] Remote daemon shut down; proceeding with flushing remote transports.
+[2022-12-06T21:11:48.620Z] [INFO] Remoting shut down.
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

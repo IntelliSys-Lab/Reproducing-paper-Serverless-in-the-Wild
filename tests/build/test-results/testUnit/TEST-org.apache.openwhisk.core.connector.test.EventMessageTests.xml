@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.apache.openwhisk.core.connector.test.EventMessageTests" tests="6" skipped="0" failures="0" errors="0" timestamp="2022-12-06T13:12:53" hostname="MacBook-Pro.local" time="0.004">
+  <properties/>
+  <testcase name="Activation should transform an activation into an event body" classname="org.apache.openwhisk.core.connector.test.EventMessageTests" time="0.002"/>
+  <testcase name="Activation should fail transformation if needed annotations are missing" classname="org.apache.openwhisk.core.connector.test.EventMessageTests" time="0.001"/>
+  <testcase name="Activation should provide sensible defaults for optional annotations" classname="org.apache.openwhisk.core.connector.test.EventMessageTests" time="0.0"/>
+  <testcase name="Activation should Transform a activation with status code" classname="org.apache.openwhisk.core.connector.test.EventMessageTests" time="0.0"/>
+  <testcase name="Activation should Transform a activation with error status code" classname="org.apache.openwhisk.core.connector.test.EventMessageTests" time="0.0"/>
+  <testcase name="Activation should Transform a activation with error status code with invalid error code" classname="org.apache.openwhisk.core.connector.test.EventMessageTests" time="0.001"/>
+  <system-out><![CDATA[[2022-12-06T21:12:53.241Z] [INFO] Shutting down remote daemon.
+[2022-12-06T21:12:53.241Z] [INFO] Remote daemon shut down; proceeding with flushing remote transports.
+[2022-12-06T21:12:53.242Z] [INFO] Remoting shut down.
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.apache.openwhisk.core.containerpool.test.ContainerArgsConfigTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2022-12-06T13:12:52" hostname="MacBook-Pro.local" time="0.037">
+  <properties/>
+  <testcase name="should use defaults for container args map" classname="org.apache.openwhisk.core.containerpool.test.ContainerArgsConfigTest" time="0.02"/>
+  <testcase name="should override defaults from system properties" classname="org.apache.openwhisk.core.containerpool.test.ContainerArgsConfigTest" time="0.017"/>
+  <system-out><![CDATA[[2022-12-06T21:12:52.816Z] [INFO] Shutting down remote daemon.
+[2022-12-06T21:12:52.816Z] [INFO] Remote daemon shut down; proceeding with flushing remote transports.
+[2022-12-06T21:12:52.817Z] [INFO] Remoting shut down.
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.apache.openwhisk.core.database.cosmosdb.CosmosDBConfigTests" tests="4" skipped="0" failures="0" errors="0" timestamp="2022-12-06T13:11:48" hostname="MacBook-Pro.local" time="0.016">
+  <properties/>
+  <testcase name="CosmosDB Config should match SDK defaults" classname="org.apache.openwhisk.core.database.cosmosdb.CosmosDBConfigTests" time="0.01"/>
+  <testcase name="CosmosDB Config should work with generic config" classname="org.apache.openwhisk.core.database.cosmosdb.CosmosDBConfigTests" time="0.001"/>
+  <testcase name="CosmosDB Config should work with extended config" classname="org.apache.openwhisk.core.database.cosmosdb.CosmosDBConfigTests" time="0.001"/>
+  <testcase name="CosmosDB Config should work with specific extended config" classname="org.apache.openwhisk.core.database.cosmosdb.CosmosDBConfigTests" time="0.004"/>
+  <system-out><![CDATA[[2022-12-06T21:11:48.633Z] [ERROR] Bind failed for TCP channel on endpoint [/127.0.0.1:25520]
+java.net.BindException: [/127.0.0.1:25520] Address already in use
+	at java.base/sun.nio.ch.Net.bind0(Native Method)
+	at java.base/sun.nio.ch.Net.bind(Net.java:555)
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.netBind(ServerSocketChannelImpl.java:344)
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:301)
+	at java.base/sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:89)
+	at akka.io.TcpListener.liftedTree1$1(TcpListener.scala:60)
+	at akka.io.TcpListener.<init>(TcpListener.scala:57)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at akka.util.Reflect$.instantiate(Reflect.scala:73)
+	at akka.actor.ArgsReflectConstructor.produce(IndirectActorProducer.scala:101)
+	at akka.actor.Props.newActor(Props.scala:226)
+	at akka.actor.ActorCell.newActor(ActorCell.scala:613)
+	at akka.actor.ActorCell.create(ActorCell.scala:640)
+	at akka.actor.ActorCell.invokeAll$1(ActorCell.scala:513)
+	at akka.actor.ActorCell.systemInvoke(ActorCell.scala:535)
+	at akka.dispatch.Mailbox.processAllSystemMessages(Mailbox.scala:295)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:230)
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:243)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1311)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1840)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1806)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:177)
+[2022-12-06T21:11:48.634Z] [INFO] Shutting down remote daemon.
+[2022-12-06T21:11:48.634Z] [INFO] Remote daemon shut down; proceeding with flushing remote transports.
+[2022-12-06T21:11:48.635Z] [INFO] Remoting shut down.
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

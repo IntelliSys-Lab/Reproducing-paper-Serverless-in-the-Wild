@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class org.apache.openwhisk.core.database.CouchDBAttachmentStoreTests</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class org.apache.openwhisk.core.database.CouchDBAttachmentStoreTests</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/org.apache.openwhisk.core.database.html">org.apache.openwhisk.core.database</a> &gt; CouchDBAttachmentStoreTests</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">1</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox failures" id="successRate">
+<div class="percent">0%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Failed tests</a>
+</li>
+<li>
+<a href="#tab1">Tests</a>
+</li>
+<li>
+<a href="#tab2">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Failed tests</h2>
+<div class="test">
+<a name="initializationError"></a>
+<h3 class="failures">initializationError</h3>
+<span class="code">
+<pre>akka.remote.RemoteTransportException: Failed to bind TCP to [127.0.0.1:25520] due to: Bind failed because of java.net.BindException: [/127.0.0.1:25520] Address already in use
+	at akka.remote.artery.tcp.ArteryTcpTransport$$anonfun$4.applyOrElse(ArteryTcpTransport.scala:274)
+	at akka.remote.artery.tcp.ArteryTcpTransport$$anonfun$4.applyOrElse(ArteryTcpTransport.scala:268)
+	at scala.concurrent.Future.$anonfun$recoverWith$1(Future.scala:417)
+	at scala.concurrent.impl.Promise.$anonfun$transformWith$1(Promise.scala:41)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at akka.dispatch.BatchingExecutor$AbstractBatch.processBatch(BatchingExecutor.scala:56)
+	at akka.dispatch.BatchingExecutor$Batch.run(BatchingExecutor.scala:74)
+	at akka.dispatch.internal.SameThreadExecutionContext$$anon$1.unbatchedExecute(SameThreadExecutionContext.scala:21)
+	at akka.dispatch.BatchingExecutor.execute(BatchingExecutor.scala:123)
+	at akka.dispatch.BatchingExecutor.execute$(BatchingExecutor.scala:117)
+	at akka.dispatch.internal.SameThreadExecutionContext$$anon$1.execute(SameThreadExecutionContext.scala:20)
+	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:72)
+	at scala.concurrent.impl.Promise$DefaultPromise.$anonfun$tryComplete$1(Promise.scala:288)
+	at scala.concurrent.impl.Promise$DefaultPromise.$anonfun$tryComplete$1$adapted(Promise.scala:288)
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete(Promise.scala:288)
+	at scala.concurrent.Promise.complete(Promise.scala:53)
+	at scala.concurrent.Promise.complete$(Promise.scala:52)
+	at scala.concurrent.impl.Promise$DefaultPromise.complete(Promise.scala:187)
+	at scala.concurrent.Promise.failure(Promise.scala:104)
+	at scala.concurrent.Promise.failure$(Promise.scala:104)
+	at scala.concurrent.impl.Promise$DefaultPromise.failure(Promise.scala:187)
+	at akka.stream.impl.io.ConnectionSourceStage$$anon$1.receive(TcpStages.scala:97)
+	at akka.stream.impl.io.ConnectionSourceStage$$anon$1.$anonfun$preStart$1(TcpStages.scala:68)
+	at akka.stream.impl.io.ConnectionSourceStage$$anon$1.$anonfun$preStart$1$adapted(TcpStages.scala:68)
+	at akka.stream.stage.GraphStageLogic$StageActor.internalReceive(GraphStage.scala:242)
+	at akka.stream.stage.GraphStageLogic$StageActor.$anonfun$callback$1(GraphStage.scala:201)
+	at akka.stream.stage.GraphStageLogic$StageActor.$anonfun$callback$1$adapted(GraphStage.scala:201)
+	at akka.stream.impl.fusing.GraphInterpreter.runAsyncInput(GraphInterpreter.scala:466)
+	at akka.stream.impl.fusing.GraphInterpreterShell$AsyncInput.execute(ActorGraphInterpreter.scala:498)
+	at akka.stream.impl.fusing.GraphInterpreterShell.processEvent(ActorGraphInterpreter.scala:600)
+	at akka.stream.impl.fusing.ActorGraphInterpreter.akka$stream$impl$fusing$ActorGraphInterpreter$$processEvent(ActorGraphInterpreter.scala:773)
+	at akka.stream.impl.fusing.ActorGraphInterpreter$$anonfun$receive$1.applyOrElse(ActorGraphInterpreter.scala:788)
+	at akka.actor.Actor.aroundReceive(Actor.scala:537)
+	at akka.actor.Actor.aroundReceive$(Actor.scala:535)
+	at akka.stream.impl.fusing.ActorGraphInterpreter.aroundReceive(ActorGraphInterpreter.scala:691)
+	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:577)
+	at akka.actor.ActorCell.invoke(ActorCell.scala:547)
+	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:270)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:231)
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:243)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1311)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1840)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1806)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:177)
+Caused by: akka.stream.impl.io.ConnectionSourceStage$$anon$1$$anon$2: Bind failed because of java.net.BindException: [/127.0.0.1:25520] Address already in use
+Caused by: java.net.BindException: [/127.0.0.1:25520] Address already in use
+	at java.base/sun.nio.ch.Net.bind0(Native Method)
+	at java.base/sun.nio.ch.Net.bind(Net.java:555)
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.netBind(ServerSocketChannelImpl.java:344)
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:301)
+	at java.base/sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:89)
+	at akka.io.TcpListener.liftedTree1$1(TcpListener.scala:60)
+	at akka.io.TcpListener.&lt;init&gt;(TcpListener.scala:57)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at akka.util.Reflect$.instantiate(Reflect.scala:73)
+	at akka.actor.ArgsReflectConstructor.produce(IndirectActorProducer.scala:101)
+	at akka.actor.Props.newActor(Props.scala:226)
+	at akka.actor.ActorCell.newActor(ActorCell.scala:613)
+	at akka.actor.ActorCell.create(ActorCell.scala:640)
+	at akka.actor.ActorCell.invokeAll$1(ActorCell.scala:513)
+	at akka.actor.ActorCell.systemInvoke(ActorCell.scala:535)
+	at akka.dispatch.Mailbox.processAllSystemMessages(Mailbox.scala:295)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:230)
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:243)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1311)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1840)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1806)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:177)
+</pre>
+</span>
+</div>
+</div>
+<div id="tab1" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="failures">initializationError</td>
+<td class="failures">0s</td>
+<td class="failures">failed</td>
+</tr>
+</table>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>[2022-12-06T21:11:48.670Z] [INFO] Shutting down remote daemon.
+[2022-12-06T21:11:48.670Z] [INFO] Remote daemon shut down; proceeding with flushing remote transports.
+[2022-12-06T21:11:48.671Z] [INFO] Remoting shut down.
+[2022-12-06T21:11:48.679Z] [ERROR] Bind failed for TCP channel on endpoint [/127.0.0.1:25520]
+java.net.BindException: [/127.0.0.1:25520] Address already in use
+	at java.base/sun.nio.ch.Net.bind0(Native Method)
+	at java.base/sun.nio.ch.Net.bind(Net.java:555)
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.netBind(ServerSocketChannelImpl.java:344)
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:301)
+	at java.base/sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:89)
+	at akka.io.TcpListener.liftedTree1$1(TcpListener.scala:60)
+	at akka.io.TcpListener.&lt;init&gt;(TcpListener.scala:57)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at akka.util.Reflect$.instantiate(Reflect.scala:73)
+	at akka.actor.ArgsReflectConstructor.produce(IndirectActorProducer.scala:101)
+	at akka.actor.Props.newActor(Props.scala:226)
+	at akka.actor.ActorCell.newActor(ActorCell.scala:613)
+	at akka.actor.ActorCell.create(ActorCell.scala:640)
+	at akka.actor.ActorCell.invokeAll$1(ActorCell.scala:513)
+	at akka.actor.ActorCell.systemInvoke(ActorCell.scala:535)
+	at akka.dispatch.Mailbox.processAllSystemMessages(Mailbox.scala:295)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:230)
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:243)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1311)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1840)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1806)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:177)
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 6.9.1</a> at 2022年12月6日 21:13:08</p>
+</div>
+</div>
+</body>
+</html>

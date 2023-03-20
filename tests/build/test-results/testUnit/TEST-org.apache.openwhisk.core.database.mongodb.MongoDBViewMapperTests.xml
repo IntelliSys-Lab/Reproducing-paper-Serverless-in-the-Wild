@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.apache.openwhisk.core.database.mongodb.MongoDBViewMapperTests" tests="25" skipped="0" failures="0" errors="0" timestamp="2022-12-06T13:11:48" hostname="MacBook-Pro.local" time="0.054">
+  <properties/>
+  <testcase name="ActivationViewMapper filter should match all activations in namespace" classname="org.apache.openwhisk.core.database.mongodb.MongoDBViewMapperTests" time="0.04"/>
+  <testcase name="ActivationViewMapper filter should match all activations in namespace since zero" classname="org.apache.openwhisk.core.database.mongodb.MongoDBViewMapperTests" time="0.001"/>
+  <testcase name="ActivationViewMapper filter should match all activations in namespace since some value" classname="org.apache.openwhisk.core.database.mongodb.MongoDBViewMapperTests" time="0.0"/>
+  <testcase name="ActivationViewMapper filter should match all activations in namespace between 2 instants" classname="org.apache.openwhisk.core.database.mongodb.MongoDBViewMapperTests" time="0.001"/>
+  <testcase name="ActivationViewMapper filter should throw UnsupportedQueryKeys for unknown keys" classname="org.apache.openwhisk.core.database.mongodb.MongoDBViewMapperTests" time="0.0"/>
+  <testcase name="ActivationViewMapper filter should throw UnsupportedView exception for unknown views" classname="org.apache.openwhisk.core.database.mongodb.MongoDBViewMapperTests" time="0.001"/>
+  <testcase name="ActivationViewMapper sort should sort descending" classname="org.apache.openwhisk.core.database.mongodb.MongoDBViewMapperTests" time="0.0"/>
+  <testcase name="ActivationViewMapper sort should sort ascending" classname="org.apache.openwhisk.core.database.mongodb.MongoDBViewMapperTests" time="0.001"/>
+  <testcase name="ActivationViewMapper sort should throw UnsupportedView" classname="org.apache.openwhisk.core.database.mongodb.MongoDBViewMapperTests" time="0.0"/>
+  <testcase name="WhisksViewMapper filter should match entities of specific type in namespace" classname="org.apache.openwhisk.core.database.mongodb.MongoDBViewMapperTests" time="0.003"/>
+  <testcase name="WhisksViewMapper filter should match entities of specific type in namespace and updated since" classname="org.apache.openwhisk.core.database.mongodb.MongoDBViewMapperTests" time="0.001"/>
+  <testcase name="WhisksViewMapper filter should match all entities of specific type in namespace and between" classname="org.apache.openwhisk.core.database.mongodb.MongoDBViewMapperTests" time="0.001"/>
+  <testcase name="WhisksViewMapper filter should match all entities in namespace" classname="org.apache.openwhisk.core.database.mongodb.MongoDBViewMapperTests" time="0.0"/>
+  <testcase name="WhisksViewMapper filter should throw UnsupportedQueryKeys for unknown keys" classname="org.apache.openwhisk.core.database.mongodb.MongoDBViewMapperTests" time="0.0"/>
+  <testcase name="WhisksViewMapper filter should throw UnsupportedView exception for unknown views" classname="org.apache.openwhisk.core.database.mongodb.MongoDBViewMapperTests" time="0.0"/>
+  <testcase name="WhisksViewMapper sort should sort descending" classname="org.apache.openwhisk.core.database.mongodb.MongoDBViewMapperTests" time="0.0"/>
+  <testcase name="WhisksViewMapper sort should sort ascending" classname="org.apache.openwhisk.core.database.mongodb.MongoDBViewMapperTests" time="0.0"/>
+  <testcase name="WhisksViewMapper sort should throw UnsupportedView" classname="org.apache.openwhisk.core.database.mongodb.MongoDBViewMapperTests" time="0.001"/>
+  <testcase name="SubjectViewMapper filter should match by subject or namespace" classname="org.apache.openwhisk.core.database.mongodb.MongoDBViewMapperTests" time="0.0"/>
+  <testcase name="SubjectViewMapper filter should match by uuid and key" classname="org.apache.openwhisk.core.database.mongodb.MongoDBViewMapperTests" time="0.0"/>
+  <testcase name="SubjectViewMapper filter should match by blocked or invocationsPerMinute or concurrentInvocations" classname="org.apache.openwhisk.core.database.mongodb.MongoDBViewMapperTests" time="0.0"/>
+  <testcase name="SubjectViewMapper filter should throw exception when keys are not same" classname="org.apache.openwhisk.core.database.mongodb.MongoDBViewMapperTests" time="0.0"/>
+  <testcase name="SubjectViewMapper filter should throw UnsupportedQueryKeys exception when keys are not know" classname="org.apache.openwhisk.core.database.mongodb.MongoDBViewMapperTests" time="0.001"/>
+  <testcase name="SubjectViewMapper filter should throw UnsupportedView exception when view is not known" classname="org.apache.openwhisk.core.database.mongodb.MongoDBViewMapperTests" time="0.0"/>
+  <testcase name="SubjectViewMapper sort should sort none" classname="org.apache.openwhisk.core.database.mongodb.MongoDBViewMapperTests" time="0.0"/>
+  <system-out><![CDATA[[2022-12-06T21:11:48.277Z] [INFO] Shutting down remote daemon.
+[2022-12-06T21:11:48.277Z] [INFO] Remote daemon shut down; proceeding with flushing remote transports.
+[2022-12-06T21:11:48.277Z] [INFO] Remoting shut down.
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

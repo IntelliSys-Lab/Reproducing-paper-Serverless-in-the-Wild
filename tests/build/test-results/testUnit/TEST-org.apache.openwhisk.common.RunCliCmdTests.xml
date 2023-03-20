@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.apache.openwhisk.common.RunCliCmdTests" tests="3" skipped="0" failures="0" errors="0" timestamp="2022-12-06T13:12:53" hostname="MacBook-Pro.local" time="15.074">
+  <properties/>
+  <testcase name="should retry commands that experience network errors" classname="org.apache.openwhisk.common.RunCliCmdTests" time="9.044"/>
+  <testcase name="should not retry commands if retry is disabled" classname="org.apache.openwhisk.common.RunCliCmdTests" time="0.001"/>
+  <testcase name="should retry commands if any failure is happen" classname="org.apache.openwhisk.common.RunCliCmdTests" time="6.028"/>
+  <system-out><![CDATA[command will retry to due to network error: exit code = 3
+stdout: 
+stderr: 
+
+command will retry to due to network error: exit code = 3
+stdout: 
+stderr: 
+
+command will retry to due to network error: exit code = 3
+stdout: 
+stderr: 
+
+command will retry to due to network error: exit code = 3
+stdout: 
+stderr: 
+
+command will retry to due to network error: exit code = 3
+stdout: 
+stderr: 
+
+command will retry to due to network error: exit code = 3
+stdout: 
+stderr: 
+
+command will retry to due to network error: exit code = 3
+stdout: 
+stderr: 
+
+command will retry to due to network error: exit code = 3
+stdout: 
+stderr: 
+
+command will retry to due to network error: exit code = 3
+stdout: 
+stderr: 
+
+command will retry to due to network error: exit code = 2
+stdout: 
+stderr: 
+
+command will retry to due to network error: exit code = 2
+stdout: 
+stderr: 
+
+command will retry to due to network error: exit code = 2
+stdout: 
+stderr: 
+
+command will retry to due to network error: exit code = 1
+stdout: 
+stderr: 
+
+command will retry to due to network error: exit code = 1
+stdout: 
+stderr: 
+
+command will retry to due to network error: exit code = 1
+stdout: 
+stderr: 
+
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

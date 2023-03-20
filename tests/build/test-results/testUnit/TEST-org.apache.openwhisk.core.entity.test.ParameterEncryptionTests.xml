@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.apache.openwhisk.core.entity.test.ParameterEncryptionTests" tests="14" skipped="0" failures="0" errors="0" timestamp="2022-12-06T13:11:49" hostname="MacBook-Pro.local" time="0.033">
+  <properties/>
+  <testcase name="ParameterEncryption should not have a default coder when turned off" classname="org.apache.openwhisk.core.entity.test.ParameterEncryptionTests" time="0.001"/>
+  <testcase name="Parameters should handle decryption of json objects" classname="org.apache.openwhisk.core.entity.test.ParameterEncryptionTests" time="0.0"/>
+  <testcase name="Parameters should handle decryption of json objects with null field" classname="org.apache.openwhisk.core.entity.test.ParameterEncryptionTests" time="0.0"/>
+  <testcase name="Parameters should drop encryption propery when no longer encrypted" classname="org.apache.openwhisk.core.entity.test.ParameterEncryptionTests" time="0.001"/>
+  <testcase name="Parameters should read the merged message payload from kafka into parameters" classname="org.apache.openwhisk.core.entity.test.ParameterEncryptionTests" time="0.023"/>
+  <testcase name="AesParameterEncryption should correctly mark the encrypted parameters after lock" classname="org.apache.openwhisk.core.entity.test.ParameterEncryptionTests" time="0.0"/>
+  <testcase name="AesParameterEncryption should serialize to json correctly" classname="org.apache.openwhisk.core.entity.test.ParameterEncryptionTests" time="0.0"/>
+  <testcase name="AesParameterEncryption should serialize to json correctly when a locked parameter is overridden" classname="org.apache.openwhisk.core.entity.test.ParameterEncryptionTests" time="0.0"/>
+  <testcase name="AesParameterEncryption should correctly decrypt encrypted values" classname="org.apache.openwhisk.core.entity.test.ParameterEncryptionTests" time="0.001"/>
+  <testcase name="AesParameterEncryption should correctly decrypt encrypted JsObject values" classname="org.apache.openwhisk.core.entity.test.ParameterEncryptionTests" time="0.001"/>
+  <testcase name="AesParameterEncryption should correctly decrypt encrypted multiline values" classname="org.apache.openwhisk.core.entity.test.ParameterEncryptionTests" time="0.001"/>
+  <testcase name="AesParameterEncryption should work if with aes256 if policy allows it" classname="org.apache.openwhisk.core.entity.test.ParameterEncryptionTests" time="0.001"/>
+  <testcase name="AesParameterEncryption should support reverting back to Noop encryption" classname="org.apache.openwhisk.core.entity.test.ParameterEncryptionTests" time="0.001"/>
+  <testcase name="No-op Encryption should not mark parameters as encrypted" classname="org.apache.openwhisk.core.entity.test.ParameterEncryptionTests" time="0.0"/>
+  <system-out><![CDATA[[2022-12-06T21:11:49.097Z] [INFO] Shutting down remote daemon.
+[2022-12-06T21:11:49.097Z] [INFO] Remote daemon shut down; proceeding with flushing remote transports.
+[2022-12-06T21:11:49.098Z] [INFO] Remoting shut down.
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
